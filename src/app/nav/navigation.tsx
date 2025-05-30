@@ -1,8 +1,8 @@
 export default function Navigation() {
     return (
-        <nav>
-            <ul>Wasi</ul>
-            <ul>Pukllay</ul>
+        <nav className="navigation">
+            <p className="nav-selection">Wasi</p>
+            <p className="nav-selection">Pukllay</p>
         </nav>
     );
 }

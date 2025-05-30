@@ -1,17 +1,20 @@
 .header {
-  background-color: black;
+  background-color: rgb(16, 112, 3);
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
 }
+
 .title {
   font-size: xx-large;
   color: white;
   font-family: cursive;
   text-align: center;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.slogan { 
+.slogan {
   font-size: large;
   color: white;
   text-align: center;
@@ -19,4 +22,54 @@
   margin-top: 1rem;
   margin-bottom: 20px;
   font-family: cursive;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgb(5, 58, 3);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.nav-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  font-size: 1rem;
+  font-family: cursive;
+  transition: .5s;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-selection:hover {
+  font-size: 1.1rem;
+  background-color: rgb(15, 141, 11);
+}
+
+.nav-titles {
+  display: flex;
+  flex: 9;
+  flex-direction: column;
+  align-items: center;
+}
+
+.isotipo {
+  display: flex;
+  flex: 2;
+}
+
+.isotipo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
