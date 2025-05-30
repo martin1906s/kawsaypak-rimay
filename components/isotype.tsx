@@ -5,7 +5,7 @@ export default function Logotipo() {
         <Image
             src='/isotipo.png'
             alt="logotipo kawsaypak rimay"
-            width={250}
-            height={200} />
+            width={500}
+            height={50} />
     )
 }
