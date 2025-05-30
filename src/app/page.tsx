@@ -18,7 +18,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <p>xfhggh</p>
     </div>
   );
 }
