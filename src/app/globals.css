@@ -65,7 +65,7 @@ body {
   justify-content: center;
   color: white;
   height: 100%;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: cursive;
   transition: .5s;
   border-radius: 10px;
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-selection:hover {
-  font-size: 1.1rem;
+  font-size: 2.3rem;
   background-color: rgb(15, 141, 11);
 }
 
@@ -119,4 +119,57 @@ body {
   filter: drop-shadow(12px 8px 4px #ffffff4f) blur(.6px);
   mask-image: radial-gradient(circle, rgb(255, 255, 255) 50%, transparent 80%);
   -webkit-mask-image: radial-gradient(circle, rgb(255, 255, 255) 50%, transparent 65%);
+}
+
+/*Media Query/
+/* Mobile: Small hasta Large (320px - 767px) */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .titles-isotipo {
+    flex-direction: column;
+  }
+}
+
+/* Tablet: (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Portátil grande (Laptop): (1025px - 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .slogan {
+    font-size: 2rem;
+  }
+
+  .nav-selection {
+    font-size: 2rem;
+  }
+
+  .nav-selection:hover {
+    font-size: 3rem;
+  }
+}
+
+/* 4K: (2560px y más) */
+@media screen and (min-width: 2560px) {
+  .title {
+    font-size: 8rem;
+  }
+
+  .slogan {
+    font-size: 3rem;
+  }
+
+  .nav-selection {
+    font-size: 3.5rem;
+  }
+
+  .nav-selection:hover {
+    font-size: 4rem;
+  }
 }
