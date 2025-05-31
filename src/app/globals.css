@@ -131,6 +131,12 @@ body {
   .titles-isotipo {
     flex-direction: column;
   }
+  .nav-selection{
+    font-size: .9rem;
+  }
+  .nav-selection:hover{
+    font-size: 1rem;
+  }
 }
 
 /* Tablet: (768px - 1024px) */
