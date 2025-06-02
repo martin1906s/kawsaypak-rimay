@@ -32,7 +32,7 @@ body {
 .title {
   font-size: 4rem;
   color: white;
-  font-family: cursive;
+  font-family: "Comic Relief", system-ui;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -45,7 +45,7 @@ body {
   padding: 0;
   margin-top: 1rem;
   margin-bottom: 20px;
-  font-family: cursive;
+  font-family: "Comic Relief", system-ui;
 }
 
 .navigation {
@@ -66,7 +66,7 @@ body {
   color: white;
   height: 100%;
   font-size: 2rem;
-  font-family: cursive;
+  font-family: "Comic Relief", system-ui;
   transition: .5s;
   border-radius: 10px;
   margin-left: 5px;
@@ -93,6 +93,17 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.titles-isotipo p {
+  text-align: justify;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Comic Relief", system-ui;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .titles {
@@ -101,6 +112,44 @@ body {
   flex: 2;
   width: 100%;
   height: 100%;
+  background: rgba(154, 182, 160, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding-bottom: 1%;
+  mask-image:
+    linear-gradient(to bottom, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 80%, transparent),
+    linear-gradient(to top, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 87%, transparent),
+    linear-gradient(to right, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent),
+    linear-gradient(to left, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent);
+  mask-composite: intersect;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+}
+
+.text-information {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.social-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.social-img img {
+  height: 100%;
+  transition: .3s;
+  border-radius: 100%;
+}
+
+.social-img img:hover {
+  width: 3rem;
+  border-radius: 25%;
 }
 
 .logo {
@@ -114,7 +163,7 @@ body {
 
 .logo img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 100% 100% 0% 0%;
   filter: drop-shadow(12px 8px 4px #ffffff4f) blur(.6px);
   mask-image: radial-gradient(circle, rgb(255, 255, 255) 50%, transparent 80%);
@@ -131,10 +180,12 @@ body {
   .titles-isotipo {
     flex-direction: column;
   }
-  .nav-selection{
+
+  .nav-selection {
     font-size: .9rem;
   }
-  .nav-selection:hover{
+
+  .nav-selection:hover {
     font-size: 1rem;
   }
 }
