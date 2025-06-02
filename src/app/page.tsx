@@ -14,7 +14,7 @@ export default function Home() {
           <div className="text-information">
             <h1 className="title">KAWSAYPAK RIMAY</h1>
             <h6 className="slogan"><i className="slogan-i">- Yachaykunata karashpa llaktakunata mushukyachishpa -</i></h6>
-            <p>Kawsaypak Rimay, 'Voces para la Vida', nace como un puente entre el saber ancestral y la sostenibilidad moderna, donde juegos interactivos y recursos didácticos enseñan a las comunidades rurales de Imantag (Ecuador) a cuidar la Pacha Mama, gestionar residuos, aprovechar la energía solar y revalorizar sus raíces quechuas, todo en un espacio digital inclusivo que llega a niños, jóvenes y adultos por igual.</p>
+            <p>Kawsaypak Rimay, &apos;Voces para la Vida&apos;, nace como un puente entre el saber ancestral y la sostenibilidad moderna, donde juegos interactivos y recursos didácticos enseñan a las comunidades rurales de Imantag (Ecuador) a cuidar la Pacha Mama, gestionar residuos, aprovechar la energía solar y revalorizar sus raíces quechuas, todo en un espacio digital inclusivo que llega a niños, jóvenes y adultos por igual.</p>
           </div>
           <div className="social-img">
             {socialLinks.map((social: Social) => (
