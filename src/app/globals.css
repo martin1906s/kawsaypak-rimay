@@ -287,82 +287,83 @@ body {
   .hoja {
     width: 50px;
   }
+
   .hoja-centro {
     transform: rotate(-40deg);
     right: 15;
     top: -25;
   }
+
   .hoja-derecha {
     transform: rotate(20deg);
     right: 0;
     top: -10;
   }
+
   .hoja-izquierda {
     transform: rotate(-60deg);
     right: 30;
     top: -20;
   }
+
   .intro-video {
     flex-direction: column;
+  }
 
-    .logo img {
-      width: 70%;
-    }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
-    .logo {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
+  .title {
+    font-size: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .title {
-      font-size: 2rem;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
+  .titles-isotipo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    .titles-isotipo {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+  .slogan {
+    font-size: .8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .slogan {
-      font-size: .8rem;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
+  .nav-selection {
+    font-size: .9rem;
+  }
 
-    .nav-selection {
-      font-size: .9rem;
-    }
+  .nav-selection:hover {
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    mask-image:
+      linear-gradient(to bottom, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 80%, transparent),
+      linear-gradient(to top, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 87%, transparent),
+      linear-gradient(to right, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent),
+      linear-gradient(to left, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent);
+    mask-composite: intersect;
+  }
 
-    .nav-selection:hover {
-      font-size: 1rem;
-      background-color: rgb(0, 0, 0);
-      mask-image:
-        linear-gradient(to bottom, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 80%, transparent),
-        linear-gradient(to top, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 87%, transparent),
-        linear-gradient(to right, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent),
-        linear-gradient(to left, transparent, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 94%, transparent);
-      mask-composite: intersect;
-    }
+  .text-information {
+    padding-top: 10%;
+  }
 
-    .text-information {
-      padding-top: 10%;
-    }
+  .titles-isotipo p {
+    font-size: 1rem;
+  }
 
-    .titles-isotipo p {
-      font-size: 1rem;
-    }
-
-    .social-img {
-      margin-bottom: 25%;
-    }
+  .social-img {
+    margin-bottom: 25%;
   }
 }
+
 
 /* Tablet: (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
