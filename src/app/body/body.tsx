@@ -35,11 +35,6 @@ export default function IntroSection() {
                     <p>En Kawsaypak Rimay, el futuro se construye hoy. Jóvenes programadores, saberes indígenas y tecnología se unen para revitalizar Imantag desde sus raíces, conectando mentes y corazones para crear un impacto sin fronteras.</p>
                 </div>
                 <div className="video-intro">
-                    <div className="hojas-container">
-                        <img src="/img/hoja.png" alt="Hoja" className="hoja hoja-izquierda" />
-                        <img src="/img/hoja.png" alt="Hoja" className="hoja hoja-centro" />
-                        <img src="/img/hoja.png" alt="Hoja" className="hoja hoja-derecha" />
-                    </div>
                     <div className="video-container">
                         <video src="/video/Kawsaypak Rimay.mp4" autoPlay muted playsInline controls></video>
                     </div>
