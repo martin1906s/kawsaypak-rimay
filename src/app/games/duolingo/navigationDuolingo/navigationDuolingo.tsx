@@ -12,7 +12,7 @@ export default function NavigationDuolingo() {
                             </div>
                             <hr />
                             <div className="LvlImg">
-                                <Image src={item.imgURL} alt="imagen del nivel" width={1000} height={1000}/>
+                                <Image src={item.imgURL} alt="imagen del nivel" width={1000} height={100} />
                             </div>
                             <hr />
                             <div className="lvlTitle-des">
