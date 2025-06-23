@@ -80,6 +80,7 @@ export default function PageDuolingo() {
         if (event) event.preventDefault();
         if (!isGameFinished) {
             alert("Debes completar el nivel actual primero.");
+            console.log(attempts);
             return;
         }
         alert("¡Próximamente el siguiente nivel estará disponible!");
