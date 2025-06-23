@@ -1,0 +1,127 @@
+.duolingo {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-duolingo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.multimedia-duolingo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-video-duolingo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1.5;
+}
+
+.content-video-duolingo iframe {
+    border-radius: 30px;
+}
+
+.content-title-video-duolingo {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-actividad-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-button-check-duolingo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.content-actividad-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.actividad-items button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #ffe602;
+    border: 1px solid #ccc;
+    border-color: #0d811d;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.2rem;
+}
+
+.actividad-items button:active {
+    transform: scale(0.98);
+}
+
+.actividad-items button:hover {
+    background-color: #035c0f;
+    color: white;
+}
+
+.actividad-items button.selected {
+    background-color: #004902;
+    color: white;
+    border-color: #388E3C;
+    width: 6rem;
+    height: 3rem;
+}
+
+.actividad-items button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.actividad-items button.selected:hover {
+    background-color: #388E3C;
+}
+
+.content-button-check-duolingo button {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.buttons-reset-next-duolingo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.buttons-reset-next-duolingo button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 12rem;
+    height: 6rem;
+    border-radius: 20px;
+    font-size: 3rem;
+}
+
+.button-reset-duolingo{
+    background-color: red;
+}
+
+.button-next-duolingo{
+    background-color: greenyellow;
+}
