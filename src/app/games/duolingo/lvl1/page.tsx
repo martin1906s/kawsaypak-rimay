@@ -1,6 +1,6 @@
 "use client";
-import './duolingo.css';
-import { DuolingoText, duolingoText } from '../../../data/duolingoText';
+import './lvl1.css';
+import { DuolingoText, duolingoText } from '../../../../../data/duolingoText';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -21,7 +21,7 @@ export default function PageDuolingo() {
     useEffect(() => {
         startNewGame();
     }, []);
-    
+
     function startNewGame() {
         const shuffled = [...duolingoText].sort(() => Math.random() - 0.5);
         setRemainingItems(shuffled);
@@ -37,7 +37,7 @@ export default function PageDuolingo() {
             alert("Selecciona una palabra en quechua.");
             return;
         }
-        
+
         let newScore = score;
         if (currentItem.id === selectedQuechua) {
             alert(`✅ ¡Correcto! ${currentItem.spanish} - ${currentItem.quechua}`);
@@ -50,10 +50,10 @@ export default function PageDuolingo() {
         setScore(newScore);
         setAttempts(prev => prev + 1);
         setSelectedQuechua(null);
-        
+
         if (nextItems.length === 0) {
             setIsGameFinished(true);
-            
+
             setTimeout(() => {
                 alert(`Juego terminado 🎉\nPuntaje: ${newScore}/${duolingoText.length}`);
                 if (newScore > 4) {
@@ -70,12 +70,12 @@ export default function PageDuolingo() {
             setCurrentItem(nextItems[0]);
         }
     }
-    
+
     function resetGame(event?: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
         if (event) event.preventDefault();
         startNewGame();
     }
-    
+
     function goToNextLevel(event?: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
         if (event) event.preventDefault();
         if (!isGameFinished) {
@@ -89,6 +89,7 @@ export default function PageDuolingo() {
 
     return (
         <div className="duolingo">
+            <button onClick={goBack}>↩︎</button>
             <header className='header-duolingo'>
                 <h1 className="title-duolingo">Titulo</h1>
                 <h5 className='slogan-duolingo'>Slogan</h5>
@@ -100,7 +101,7 @@ export default function PageDuolingo() {
                 <div className="content-video-duolingo">
                     <iframe
                         className="video-duolingo"
-                        src="https://drive.google.com/file/d/ididididididididid/preview"
+                        src="https://drive.google.com/file/d/1G4ualJxVqscc86NC9Dk9GYl6P9FiQjjI/preview"
                         allow='autoplay'
                         allowFullScreen
                     />

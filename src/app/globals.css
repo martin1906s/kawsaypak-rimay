@@ -2,6 +2,19 @@ body {
   background-color: black;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+}
+
+button {
+  cursor: pointer;
+}
+
 .header {
   position: relative;
   background-image: url('/bgHeader.webp');
